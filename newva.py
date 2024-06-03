@@ -43,7 +43,7 @@ def wishMe():
         speak("Good Afternoon Mam!")
     else:
         speak("Good Evening Mam!")
-    assname = ("Jarvis 1 point o")
+    assname = ("Poooja")
     speak("I am your Assistant")
     speak(assname)
 
@@ -146,7 +146,7 @@ if __name__ == '__main__':
             strTime = datetime.datetime.now().strftime("%H:%M:%S")
             speak(f"Mam, the time is {strTime}")
 
-        elif 'email to gaurav' in query:
+        elif 'email to bindu' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
@@ -217,7 +217,7 @@ if __name__ == '__main__':
             speak("If you talk then definitely you are human.")
 
         elif "why you came to world" in query:
-            speak("Thanks to Gaurav. further It's a secret")
+            speak("Thanks to Bindu. further It's a secret")
 
         elif 'power point presentation' in query:
             speak("Opening Power Point presentation")
@@ -228,10 +228,10 @@ if __name__ == '__main__':
             speak("It is 7th sense that destroys all other senses")
 
         elif "who are you" in query:
-            speak("I am your virtual assistant created by Gaurav")
+            speak("I am your virtual assistant created by Bindu")
 
         elif 'reason for you' in query:
-            speak("I was created as a Minor project by Mister Gaurav")
+            speak("I was created as a Minor project by Bindu")
 
         elif 'change background' in query:
             ctypes.windll.user32.SystemParametersInfoW(20, 0, "Location of wallpaper", 0)
@@ -284,7 +284,7 @@ if __name__ == '__main__':
             webbrowser.open("https://www.google.nl/maps/place/" + location + "")
 
         elif "camera" in query or "take a photo" in query:
-            ec.capture(0, "Jarvis Camera", "img.jpg")
+            ec.capture(0, "Bindu Camera", "img.jpg")
 
         elif "restart" in query:
             subprocess.call(["shutdown", "/r"])
@@ -315,7 +315,7 @@ if __name__ == '__main__':
 
         elif "show note" in query:
             speak("Showing Notes")
-            file = open("jarvis.txt", "r")
+            file = open("poooja.txt", "r")
             content = file.read()
             print(content)
             speak(content)
@@ -334,9 +334,9 @@ if __name__ == '__main__':
                     if ch:
                         Pypdf.write(ch)
 
-        elif "jarvis" in query:
+        elif "Poooja" in query:
             wishMe()
-            speak("Jarvis 1 point o in your service Mam")
+            speak("Poooja in your service Mam")
             speak(assname)
 
         elif "weather" in query:
@@ -386,7 +386,7 @@ if __name__ == '__main__':
 
         elif "Good Morning" in query:
             speak("A warm" + query)
-            speak("How are you Mam?")
+            speak("How are you?")
             speak(assname)
 
         elif "will you be my gf" in query or "will you be my bf":
